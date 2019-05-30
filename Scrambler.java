@@ -80,7 +80,7 @@ public class Scrambler extends Parser
         System.out.println("Here is the scrambled string:" + theString);
         System.out.println("Time to descramble. Good luck!");
         ArrayList<String> words = getInput();
-        if(words == originalWords)
+        if(Arrays.equals(words.toArray(), originalWords.toArray()))
         {
             System.out.println("Nice job unscrambling!");
         }
